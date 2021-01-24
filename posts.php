@@ -7,6 +7,7 @@ $is_single_post = is_singular();
 ?>
   <div class="cur_category">
     <div class="mb-3">
+      <h2>Posts</h2>
       <h3 style="text-align: left;"><?php echo $category_name; ?></h3>
       <em><?php echo ($cur_category['month'] . " " . $cur_category['year']); ?></em>
     </div>
