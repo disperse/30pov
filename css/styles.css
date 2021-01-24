@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 .post {
-  width: 533px;
+  max-width: 533px;
 }
 div.thirty-pov a, div.thirty-pov a:hover, div.thirty-pov a:visited {
   color: #0d204a;

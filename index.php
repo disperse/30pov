@@ -28,7 +28,7 @@
   <div class="container thirty-pov">
     <div class="row">
       <div class="col-xl-6 col-lg-9 col-md-12 col-sm-12">
-        <div style="width: 533px;" class="mx-auto">
+        <div style="max-width: 533px;" class="mx-auto">
           <div class="text-start">
               <?php get_template_part('navbar'); ?>
           </div>
