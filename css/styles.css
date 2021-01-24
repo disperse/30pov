@@ -1,0 +1,30 @@
+body {
+  font-family: Cambria, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+.cover {
+  border-top: 1px solid #191416;
+  border-left: 1px solid #191416;
+  border-bottom: 3px solid #191416;
+  border-right: 3px solid #191416;
+  width: 533px;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+}
+.post {
+  width: 533px;
+}
+div.thirty-pov a, div.thirty-pov a:hover, div.thirty-pov a:visited {
+  color: #0d204a;
+}
+div.thirty-pov a {
+  text-decoration: none;
+  font-weight: bold;
+}
+div.thirty-pov a.selected {
+  text-decoration: underline;
+}
+div.thirty-pov a:hover {
+  text-decoration: underline;
+}
