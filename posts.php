@@ -1,4 +1,4 @@
-<div>
+<div class="mt-3">
 <?php
 global $cur_category;
 $cur_post_id = get_the_ID();

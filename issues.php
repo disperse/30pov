@@ -7,7 +7,7 @@
       echo $returnString;
   }
 ?>
-<div id="rightbar_bio">
+<div id="rightbar_bio" class="mt-3">
   <div id="bio">
     <div class="mb-3">
       <h2>Issues</h2>

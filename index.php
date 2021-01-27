@@ -52,6 +52,11 @@
         </div>
       </div>
       <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <?php if(is_singular()) :
+              $author_id = get_the_author_meta('ID');
+           ?>
+              <?php get_template_part('author-card', null, array('author_id' => $author_id, 'is_single_author' => true)); ?>
+          <?php endif; ?>
           <?php get_template_part('posts'); ?>
           <hr/>
       </div>
