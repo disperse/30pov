@@ -2,7 +2,7 @@
 <?php while(have_posts()) : the_post();?>
   <div class="post" id="post-<?php the_ID(); ?>">
     <h1><?php the_title(); ?></h1>
-    <h3><em><?php the_date(); ?></em></h3>
+    <!--h3><em><?php the_date(); ?></em></h3-->
     <div class="entry">
       <?php the_content(); ?>
       <p class="postmetadata" style="clear: both;">

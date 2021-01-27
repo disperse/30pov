@@ -33,7 +33,9 @@
               <?php get_template_part('navbar'); ?>
           </div>
           <div>
-            <?php if(is_singular() && $post->post_name == 'contributor-bios') : ?>
+            <?php if(is_author()) : ?>
+                <?php get_template_part('author-inc'); ?>
+            <?php elseif(is_singular() && $post->post_name == 'contributor-bios') : ?>
                 <?php get_template_part('contributors'); ?>
             <?php elseif (is_singular()): ?>
                 <?php get_template_part('navigation'); ?>
@@ -50,10 +52,11 @@
         </div>
       </div>
       <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-          <?php get_template_part('issues'); ?>
+          <?php get_template_part('posts'); ?>
+          <hr/>
       </div>
       <div class="col-xl-3 col-lg-12 col-md-6 col-sm-6">
-          <?php get_template_part('posts'); ?>
+          <?php get_template_part('issues'); ?>
       </div>
     </div>
     <div class="row">

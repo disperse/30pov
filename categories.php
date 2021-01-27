@@ -99,7 +99,7 @@ $categories = array (
     array(
         'id' => 29,
         'name' => 'selective-hearing',
-        'date' => 'July',
+        'month' => 'July',
         'year' => '2010'
     ),
     array(

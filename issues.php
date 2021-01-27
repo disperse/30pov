@@ -18,7 +18,7 @@
           $category = $categories[$i];
           if ($category['year'] == $cur_category['year']) {
               $category_name = get_the_category_by_ID($category['id']);
-              echo "<div class='collapsed_category'>";
+              echo "<div class='collapsed_category mb-2'>";
               echo("<em style='text-align: left;'>" . $category['month'] . " " . $category['year'] . "</em>");
               echo("<h5 style='text-align: left;'><a " . (($cur_category['id'] == $category['id']) ? 'class="selected" ' : '') . " href='" . get_category_link($category['id']) . "'>" . $category_name . "</a></h5>");
               echo "</div>";
@@ -26,6 +26,5 @@
       }
       ?>
   </div>
-  <hr/>
 </div>
 
