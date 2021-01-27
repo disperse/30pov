@@ -1,3 +1,17 @@
+/*
+Theme Name: 30pov
+Author: the 30pov team
+Author URI: https://www.30pov.com/
+Description: Custom theme for the 30pov website
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 30pov
+Tags: three-columns, right-sidebar
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 body {
   font-family: Cambria, Helvetica, sans-serif;
   font-size: 12pt;
