@@ -34,13 +34,16 @@
           </div>
           <div>
             <?php if(is_author()) : ?>
+                <img src="<?php echo get_template_directory_uri()?>/images/post_header_533x87.png" style="max-width: 533px; height: auto;"/>
                 <?php get_template_part('author-inc'); ?>
             <?php elseif(is_singular() && $post->post_name == 'contributor-bios') : ?>
+                <img src="<?php echo get_template_directory_uri()?>/images/post_header_533x87.png" style="max-width: 533px; height: auto;"/>
                 <?php get_template_part('contributors'); ?>
             <?php elseif (is_singular()): ?>
+                <img src="<?php echo get_template_directory_uri()?>/images/post_header_533x87.png" style="max-width: 533px; height: auto;"/>
                 <?php get_template_part('navigation'); ?>
                 <?php get_template_part('post'); ?>
-              <div class="back_top"><a href="javascript:window.scrollTo(0,0);">Top</a></div>
+                <div class="back_top"><a href="javascript:window.scrollTo(0,0);">Top</a></div>
                 <?php get_template_part('navigation'); ?>
             <?php else: ?>
               <?php get_template_part('cover'); ?>
