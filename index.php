@@ -59,7 +59,12 @@
               $author_id = get_the_author_meta('ID');
            ?>
               <?php get_template_part('author-card', null, array('author_id' => $author_id, 'is_single_author' => false)); ?>
-          <?php endif; ?>
+          <?php endif;
+            $selected = ($is_single_post && $cur_post_id == 8234) ? ' class="selected" ' : '';
+          ?>
+          <div class="post mb-2" style="max-width: 285px;" id="post-editors-letter">
+            <div class="text-wrap rightbar_post_title"><a <?php echo $selected; ?>  href="2021/01/30/editors-letter/" title="Editor's Letter">Editor's Letter</a></div>
+          </div>
           <?php get_template_part('posts'); ?>
           <hr/>
       </div>
