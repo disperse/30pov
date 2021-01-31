@@ -15,11 +15,14 @@ function get_user_src($userId) {
   <div id="post_wrapper">
       <div id="post">
             <?php
+            $exclude_list = array("admin");
             $contributors = get_users();
             if ($contributors) {
                 foreach ($contributors as $contributor) {
-                    $author_id = $contributor->ID;
-                    get_template_part('author-card', null, array('author_id' => $author_id, 'is_single_author' => false));
+                    if (! in_array($contributor->display_name, $exclude_list)) {
+                        $author_id = $contributor->ID;
+                        get_template_part('author-card', null, array('author_id' => $author_id, 'is_single_author' => false));
+                    }
                 }
             }
             ?>

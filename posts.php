@@ -36,6 +36,7 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         $the_id = get_the_ID();
+        $slug = get_post_field('post_name', $the_id);
         $the_date = the_date('m/d', ' ', ' ', false);
         $the_permalink = get_permalink();
         $the_title = get_the_title();
@@ -43,6 +44,7 @@ if (have_posts()) {
         $the_author_id = get_the_author_meta('ID');
         $selected = ($is_single_post && $cur_post_id == $the_id) ? ' class="selected" ' : '';
         $author_url = get_author_posts_url($the_author_id);
+        if ($slug !== "editors-letter") {
         echo <<<EOF
 <div class="post mb-2" style="max-width: 285px;" id="post-$the_id">
   <!--span class="rightbar_date">$the_date</span-->
@@ -56,6 +58,7 @@ EOF;
   </div>
 </div>
 <?php
+        }
     }
 }
 ?>
