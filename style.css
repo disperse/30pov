@@ -28,6 +28,7 @@ body {
 }
 .post {
   max-width: 533px;
+  text-align: justify;
 }
 div.thirty-pov a, div.thirty-pov a:hover, div.thirty-pov a:visited {
   color: #0d204a;
