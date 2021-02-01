@@ -33,9 +33,9 @@ if (is_author()) {
           $selected = ($is_single_post && $cur_post_id == 8234) ? ' class="selected" ' : '';
   ?>
   <div class="post mb-2" style="max-width: 285px;" id="post-editors-letter">
-    <div class="text-wrap rightbar_post_title"><a <?php echo $selected; ?>  href="2021/01/30/editors-letter/" title="Editor's Letter">Editor's Letter</a></div>
+    <div class="text-wrap rightbar_post_title"><a <?php echo $selected; ?>  href="/2021/01/30/editors-letter/" title="Editor's Letter">Editor's Letter</a></div>
     <div style="text-align: right;">
-      <span class="rightbar_author" style=""><em><a href="author/lee-lee/">llxtm</a></em></span>
+      <span class="rightbar_author" style=""><em><a href="/author/lee-lee/">llxtm</a></em></span>
     </div>
   </div>
   <?php
