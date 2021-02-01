@@ -15,7 +15,7 @@ function get_user_src($userId) {
   <div id="post_wrapper">
       <div id="post">
             <?php
-            $exclude_list = array("admin", "jennie-smash");
+            $exclude_list = array("admin", "Jennie Smash");
             $contributors = get_users();
             if ($contributors) {
                 foreach ($contributors as $contributor) {
